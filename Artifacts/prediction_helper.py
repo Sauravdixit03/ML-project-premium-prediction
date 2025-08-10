@@ -2,11 +2,11 @@ import pandas as pd
 
 from joblib import load
 
-model_rest=load(r"C:\Users\skd53\OneDrive\Machine learning\ML_regression_project\App\Artifacts\model_rest.joblib")
-model_young=load(r"C:\Users\skd53\OneDrive\Machine learning\ML_regression_project\App\Artifacts\model_young.joblib")
+model_rest=load(r"C:/Users/skd53/OneDrive/Machine learning/ML_regression_project/App/Artifacts/model_rest.joblib")
+model_young=load(r"C:/Users/skd53/OneDrive/Machine learning/ML_regression_project/App/Artifacts/model_young.joblib")
 
-scaler_rest=load(r"C:\Users\skd53\OneDrive\Machine learning\ML_regression_project\App\Artifacts\scaler_rest.joblib")
-scaler_young=load(r"C:\Users\skd53\OneDrive\Machine learning\ML_regression_project\App\Artifacts\scaler_young.joblib")
+scaler_rest=load(r"C:/Users/skd53/OneDrive/Machine learning/ML_regression_project/App/Artifacts/scaler_rest.joblib")
+scaler_young=load(r"C:/Users/skd53/OneDrive/Machine learning/ML_regression_project/App/Artifacts/scaler_young.joblib")
 
 
 
