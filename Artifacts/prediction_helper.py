@@ -1,12 +1,18 @@
 import pandas as pd
-
+import os
 from joblib import load
 
-model_rest=load(r"C:/Users/skd53/OneDrive/Machine learning/ML_regression_project/App/Artifacts/model_rest.joblib")
-model_young=load(r"C:/Users/skd53/OneDrive/Machine learning/ML_regression_project/App/Artifacts/model_young.joblib")
+# Get the directory where this helper file is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-scaler_rest=load(r"C:/Users/skd53/OneDrive/Machine learning/ML_regression_project/App/Artifacts/scaler_rest.joblib")
-scaler_young=load(r"C:/Users/skd53/OneDrive/Machine learning/ML_regression_project/App/Artifacts/scaler_young.joblib")
+# Define the Artifacts folder path relative to this file
+ARTIFACTS_DIR = os.path.join(BASE_DIR, "Artifacts")
+
+# Load models and scalers using relative paths
+model_rest = load(os.path.join(ARTIFACTS_DIR, "model_rest.joblib"))
+model_young = load(os.path.join(ARTIFACTS_DIR, "model_young.joblib"))
+scaler_rest = load(os.path.join(ARTIFACTS_DIR, "scaler_rest.joblib"))
+scaler_young = load(os.path.join(ARTIFACTS_DIR, "scaler_young.joblib"))
 
 
 
