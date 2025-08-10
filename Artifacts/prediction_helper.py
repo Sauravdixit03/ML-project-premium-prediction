@@ -6,7 +6,8 @@ from joblib import load
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Define the Artifacts folder path relative to this file
-ARTIFACTS_DIR = os.path.join(BASE_DIR, "Artifacts")
+ARTIFACTS_DIR = ARTIFACTS_DIR = BASE_DIR
+
 
 # Load models and scalers using relative paths
 model_rest = load(os.path.join(ARTIFACTS_DIR, "model_rest.joblib"))
